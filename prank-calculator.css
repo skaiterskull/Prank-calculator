@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(183, 23, 23, 0.2) 0%,
+    rgba(84, 12, 174, 0.2) 97.67%
+  );
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.mainParent {
+  width: 500px;
+  background: white;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.result {
+  background: #fffcfc;
+  border: 1px solid black;
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  line-height: 3rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+
+  text-align: end;
+  font-weight: bolder;
+}
+
+.items {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "clear clean dived multi"
+    "no-7 no-8 no-9 minus"
+    "no-4 no-5 no-6 plus"
+    "no-3 no-2 no-1 ans"
+    "no-0 no-0 no-0 ans";
+}
+
+.items > * {
+  min-height: 50px;
+  border: 0px solid rgba(0, 0, 0, 0.25);
+  box-shadow: -4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.clear {
+  grid-area: clear;
+}
+.clean {
+  grid-area: clean;
+}
+.dived {
+  grid-area: dived;
+}
+.multi {
+  grid-area: multi;
+}
+.no-8 {
+  grid-area: no-8;
+}
+.no-9 {
+  grid-area: no-9;
+}
+.no-0 {
+  grid-area: no-0;
+}
+.minus {
+  grid-area: minus;
+}
+.no-4 {
+  grid-area: no-4;
+}
+.no-5 {
+  grid-area: no-5;
+}
+.no-6 {
+  grid-area: no-6;
+}
+.no-7 {
+  grid-area: no-7;
+}
+.plus {
+  grid-area: plus;
+}
+.no-3 {
+  grid-area: no-3;
+}
+.no-2 {
+  grid-area: no-2;
+}
+.no-1 {
+  grid-area: no-1;
+}
+.ans {
+  grid-area: ans;
+}
